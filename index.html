@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <title>g10 classmate maker</title>
+    <style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #output {
+        background-color: #ed9cce;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    #btn {
+        background-color: #ed9cce;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ed9cce;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="output">
+            <input type="text" id="name" class="containerdesign" placeholder="name">
+            <input type="text" id="section" class="containerdesign" placeholder="section">
+            <input type="text" id="subject" class="containerdesign" placeholder="subject">
+            <br>
+            <br>
+            <button py-click="add_classmate" class="btn" id="submit">Submit</button>
+            <button py-click="displaylist" class="btn" id="show">Show List</button>
+        </div>
+
+<!--encountered a glitch where it displayed on the right of the page instead of the center, so I added a div to fix it-->
+
+    <div id="ClassmateList">
+        <p>List of Classmates:</p>
+        <p class="listingspace" id="listingspace"></p>
+    </div>
+    </div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
