@@ -50,9 +50,25 @@
         border-radius: 10px;
     }
 
+    .containerdesign {
+        background-color: #ed9cce;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+
     </style>
 </head>
 <body>
+    
+    <!--had minor trouble getting a py-click button to have a design so I left it plain-->
+    
     <div id="container">
         <div id="output">
             <input type="text" id="name" class="containerdesign" placeholder="name">
@@ -60,8 +76,8 @@
             <input type="text" id="subject" class="containerdesign" placeholder="subject">
             <br>
             <br>
-            <button py-click="add_classmate" class="btn" id="submit">Submit</button>
-            <button py-click="displaylist" class="btn" id="show">Show List</button>
+            <button py-click="add_classmate" class="classname" id="submit">Submit</button>
+            <button py-click="displaylist" class="classname" id="show">Show List</button>
         </div>
 
 <!--encountered a glitch where it displayed on the right of the page instead of the center, so I added a div to fix it-->
